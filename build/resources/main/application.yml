@@ -1,0 +1,8 @@
+
+selenium:
+  use: false
+
+---
+spring:
+  profiles:
+    active: alpha
