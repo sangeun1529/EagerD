@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import javax.annotation.PostConstruct;
 
 @Configuration
-@EnableScheduling
+//@EnableScheduling //스케쥴링은 쿼츠 구현 예정
 public class LazyDeveloperConfigration {
 
     @Value("${selenium.use}")
@@ -18,5 +18,7 @@ public class LazyDeveloperConfigration {
     public void initConfig() throws Exception {
         System.out.println("configStart!!");
         System.out.println(seleniumUse);
+
+
     }
 }
