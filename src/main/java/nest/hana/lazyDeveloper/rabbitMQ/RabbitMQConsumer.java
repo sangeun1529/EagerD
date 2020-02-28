@@ -13,7 +13,7 @@ import java.util.concurrent.TimeoutException;
 @Component
 public class RabbitMQConsumer{
 
-    @PostConstruct
+//    @PostConstruct
     public void init() throws Exception{
         int TEST_Count = 3;
         for (int i = 0; i < TEST_Count; i++) {

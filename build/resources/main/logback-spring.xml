@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+
+    <property name="LOGS_PATH" value="./logs"/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%-5level][%.20thread] | %C{1}.%M [%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="core" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOGS_PATH}/core.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOGS_PATH}/logback/%d{yyyy/mm,aux}/core.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>365</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%-5level][%.20thread] | %C{1}.%M [%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="nest.hana.lazyDeveloper.logger.CoreLogger" level="INFO">
+        <appender-ref ref="core"/>
+    </logger>
+
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="console"/>
+    </root>
+
+</configuration>
+

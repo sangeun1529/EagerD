@@ -1,9 +1,7 @@
 package nest.hana.lazyDeveloper.config;
 
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 import javax.annotation.PostConstruct;
 
@@ -16,9 +14,12 @@ public class LazyDeveloperConfigration {
 
     @PostConstruct
     public void initConfig() throws Exception {
-        System.out.println("configStart!!");
         System.out.println(seleniumUse);
+        System.out.println();
+    }
 
+    public void advice(){
 
     }
+
 }

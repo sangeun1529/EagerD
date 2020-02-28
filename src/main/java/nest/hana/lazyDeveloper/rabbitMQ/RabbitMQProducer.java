@@ -16,7 +16,7 @@ public class RabbitMQProducer {
 
     final static String QUEUE_NAME = "rabbitMQ";
 
-    @PostConstruct
+//    @PostConstruct
     private void init() {
 
         int TEST_MESSAGES = 4;
