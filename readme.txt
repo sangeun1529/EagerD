@@ -1,4 +1,4 @@
-lazydeveloper 의 첫 project
+eagerdeveloper 의 첫 project
 
 core 기술들의 집약체 프로젝트로 개발계획을 잡음.
 
@@ -12,3 +12,5 @@ MSA , 애자일로 개발방식 진행.
 
 
 2020-02-23 RabbitMQ 개발
+
+2020-02-27 logback 으로 AOP 사용하여 개발 
