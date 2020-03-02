@@ -1,4 +1,4 @@
-eagerdeveloper 의 첫 project
+EagerD 의 첫 project
 ============================
 
 ***
