@@ -23,8 +23,7 @@ public class LazyDeveloperContext implements ApplicationContextAware {
         CONTEXT = applicationContext;
     }
     @PostConstruct
-    public void postConstruct(){
-        lazyDeveloperConfigration.advice();
+    public void initContext(){
     }
 
 

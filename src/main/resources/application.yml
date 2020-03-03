@@ -1,7 +1,10 @@
+## global config
 
 selenium:
   use: false
 
+
+## profile config
 ---
 spring:
   profiles:
