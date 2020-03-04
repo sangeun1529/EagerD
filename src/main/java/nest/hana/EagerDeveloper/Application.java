@@ -1,4 +1,4 @@
-package nest.hana.lazyDeveloper;
+package nest.hana.EagerDeveloper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;

@@ -20,7 +20,7 @@
         </encoder>
     </appender>
 
-    <logger name="nest.hana.lazyDeveloper.logger.CoreLogger" level="INFO">
+    <logger name="nest.hana.EagerDeveloper.logger.CoreLogger" level="INFO">
         <appender-ref ref="core"/>
     </logger>
 

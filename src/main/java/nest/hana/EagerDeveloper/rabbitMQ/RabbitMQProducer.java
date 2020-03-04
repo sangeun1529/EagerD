@@ -1,4 +1,4 @@
-package nest.hana.lazyDeveloper.rabbitMQ;
+package nest.hana.EagerDeveloper.rabbitMQ;
 
 
 import com.rabbitmq.client.Channel;
@@ -6,10 +6,6 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.MessageProperties;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
-import java.io.IOException;
-import java.util.concurrent.TimeoutException;
 
 @Component
 public class RabbitMQProducer {

@@ -1,4 +1,4 @@
-package nest.hana.lazyDeveloper.logger;
+package nest.hana.EagerDeveloper.logger;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CoreLogger implements EDLogger {
 
-    @Around("execution(* nest.hana.lazyDeveloper.config.*.*(..))")
+    @Around("execution(* nest.hana.EagerDeveloper.config.*.*(..))")
 //    @Around("@annotation(Override)")
     public Object logging(ProceedingJoinPoint jp) throws Throwable {
         log.info("start --" + jp.getSignature().toLongString());

@@ -1,4 +1,4 @@
-package nest.hana.lazyDeveloper.config.httpConfig;
+package nest.hana.EagerDeveloper.config.httpConfig;
 
 
 import org.apache.http.client.HttpClient;
