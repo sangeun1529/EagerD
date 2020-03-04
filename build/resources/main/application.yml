@@ -1,7 +1,12 @@
+## global config
 
 selenium:
   use: false
 
+server:
+  port: 18080
+
+## profile config
 ---
 spring:
   profiles:
