@@ -16,10 +16,9 @@ EagerD (이거디~) 의 첫 project
 
 ***
 
-진행사항
--------
+### HISTORY
 
-* abbitMQ 개발
+* rabbitMQ 개발
   + 2020-02-23 공식 예제를 통한 기본사용법 숙달
 
 
@@ -27,9 +26,14 @@ EagerD (이거디~) 의 첫 project
   + 2020-02-27 서비스와 코어 로직이 늘어날때 마다 추가예정
   + 2020-02-28 기본 틀 개발
 
-
 * command 패턴 기반으로한 쿼츠 스케쥴링 개발 (진행중)
   + 2020-03-02 설정커밋 
+
+* Rest , web 라이브러리
+  + 2020-03-03 restTemplate(spec) , httpclient (impl)
+  + selenium
   
-  
-  
+* proxy : cloud 기반 서버 구성 (squid)
+* Junit (단위 테스트 (컴포넌트레벨까지..))
+* ORM - JPA
+* DB - H2
